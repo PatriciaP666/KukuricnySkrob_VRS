@@ -108,6 +108,7 @@ uint8_t i2c_read(uint8_t* buffer, uint8_t lenght, uint8_t reg_add, uint8t_t slav
 		}
 	end_read_flag = 0;
 	LL_I2C_EnableIT_RX(I2C1);
+	// slave reg read
 	LL_I2C_HandleTransfer(I2C1, slave_add, LL_I2C_ADDRSLAVE_7BIT, 1, LL_I2C_MODE_AUTOEND, LL_I2C_GENERATE_START_WRITE);
 	while(!LL_I2C_IsActiveFlag_STOP(I2C1))
 		{
@@ -120,13 +121,14 @@ uint8_t i2c_read(uint8_t* buffer, uint8_t lenght, uint8_t reg_add, uint8t_t slav
 	while(LL_I2C_IsActiveFlag_STOP(I2C1)){};
 
 	// Receive data from slave
-	LL_I2C_HandleTransfer(I2C1, slave_add, LL_I2C_ADDRSLAVE_7BIT, 1, LL_I2C_MODE_AUTOEND, LL_I2C_GENERATE_START_READ);
+	LL_I2C_HandleTransfer(I2C1, slave_add, LL_I2C_ADDRSLAVE_7BIT, lenght, LL_I2C_MODE_AUTOEND, LL_I2C_GENERATE_START_READ);
 	while(!LL_I2C_IsActiveFlag_STOP(I2C1)){};
 
 	//End of transfer
 	LL_I2C_DisableIT_RX(I2C1);
 	LL_I2C_ClearFlag_STOP(I2C1);
-	LL_I2C_ClearFlag_NACK(I2C1);
-
+	I2C1->ICR |= (1 << 4);
+	rec_index = 0;
+	end_read_flag = 1;
 	return rec_buffer_read;
 }
