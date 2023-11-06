@@ -132,3 +132,13 @@ uint8_t i2c_read(uint8_t* buffer, uint8_t lenght, uint8_t reg_add, uint8t_t slav
 	end_read_flag = 1;
 	return rec_buffer_read;
 }
+
+void I2C1_EV_IRQHandler(void)
+{
+	// Check RXNE flag value in ISR register
+	if(LL_I2C_IsActiveFlag_RXNE(I2C1))
+	{
+		// Call function Master Reception Callback
+
+	}
+}
