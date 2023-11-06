@@ -41,7 +41,20 @@ uint8_t LPS25HB_Init()
 			state = 0;
 		}
 	}
-
+	// Set power-down mode to turn ON -> set PD to 1 to power on
+	uint8_t reg_setup = LPS25HB_read(LPS25HB_CONTROL_REG1);
+	reg_setup |= (1 << 7);
+	LPS25HB_write(reg_setup, LPS25HB_CONTROL_REG1, lps25hb_add);
+	// Set up continuous update
+	reg_setup = LPS25HB_read_byte(LPS25HB_CONTROL_REG1);
+	reg_setup &= ~(1 << 2);
+	LPS25HB_write_byte(reg_setup, LPS25HB_CONTROL_REG1, lps25hb_add);
+	// Set Output data rate register to 25 Hz -> 0b100
+	reg_setup = LPS25HB_read(LPS25HB_CONTROL_REG1);
+	reg_setup &= ~(0x07 << 4);
+	reg_setup |= (0x04 << 4);
+	LPS25HB_write(reg_setup, LPS25HB_CONTROL_REG1, lps25hb_add);
+	reg_setup = LPS25HB_read(LPS25HB_CONTROL_REG1);
 	return state;
 }
 
