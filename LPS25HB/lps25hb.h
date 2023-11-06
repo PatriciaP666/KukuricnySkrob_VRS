@@ -30,5 +30,7 @@
 uint8_t LPS25HB_read(uint8_t reg_add);
 void LPS25HB_write(uint8_t data, uint8_t reg_add, uint8_t slave_add);
 uint8_t LPS25HB_Init();
+void LPS25HB_array(uint8_t *data, uint8_t reg, uint8_t length);
+float LPS25HB_pressure();
 
 #endif /* LPS25HB_H_ */

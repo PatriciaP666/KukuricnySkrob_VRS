@@ -58,4 +58,16 @@ uint8_t LPS25HB_Init()
 	return state;
 }
 
+void LPS25HB_array(uint8_t *data, uint8_t reg, uint8_t length)
+{
+	i2c_read(data, length, reg, lps25hb_add, 1);
+}
+
+float LPS25HB_pressure()
+{
+	uint8_t pressure[3] = {0};
+	LPS25HB_array(pressure, LPS25HB_PRESSURE_OUT_XL, 3);
+	float pressure_real = ((pressure[2] * 65536) + (pressure[1] * 256) + pressure[0]) / 4096.0;
+	return pressure_real;
+}
 
