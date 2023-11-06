@@ -15,9 +15,9 @@ uint8_t LPS25HB_read(uint8_t red_add)
 	return *(i2c_read(&data, 1, reg_add, lps25hb_add, 0));
 }
 
-uint8_t LPS25HB_write()
+void LPS25HB_write(uint8_t data, uint8_t reg_add, uint8_t slave_add)
 {
-
+	i2c_write(data, reg_add, slave_add, 0);
 }
 
 uint8_t LPS25HB_Init()
