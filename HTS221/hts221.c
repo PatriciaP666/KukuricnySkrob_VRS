@@ -92,3 +92,43 @@ float HTS221_get_temperature()
 
 	return T_DegC;
 }
+
+float HTS221_get_humidity()
+{
+	uint8_t h0_rh_x2 = 0;
+	uint8_t h1_rh_x2 = 0;
+	int16_t h0_t0_out = 0;
+	int16_t h1_t0_out = 0;
+	int16_t h_out = 0;
+
+	// H0_T0
+	uint8_t h0_t0_temp = HTS221_read(HTS221_H0_T0_OUT_L);
+	h0_t0_out |= h0_t0_temp;
+	h0_t0_temp = HTS221_read(HTS221_H0_T0_OUT_H);
+	h0_t0_out |= (h0_t0_temp << 8);
+
+	// H1_T0
+	uint8_t h1_t0_temp = HTS221_read(HTS221_H1_T0_OUT_L);
+	h1_t0_temp |= h1_t0_temp;
+	h1_t0_temp = HTS221_read(HTS221_H1_T0_OUT_H);
+	h1_t0_out |= (h1_t0_temp << 8);
+
+	// H0_rH_x2
+	h0_rh_x2 = HTS221_read(HTS221_H0_RH_x2);
+
+	// H1_rH_x2
+	h1_rh_x2 = HTS221_read(HTS221_H1_RH_x2);
+
+	// H_OUT
+	uint8_t h0_out_temp = HTS221_read(HTS221_HUMIDITY_OUT_L);
+	h_out |= h0_out_temp;
+	h0_out_temp = HTS221_read(HTS221_HUMIDITY_OUT_H);
+	h_out |= (h0_out_temp << 8);
+
+	float humidity = 0.0;
+	float h0 = h0_rh_x2 / 2.0;
+	float h1 = h1_rh_x2 / 2.0;
+	humidity = (h0 + (h_out - h0_t0_out) * (h1 - h0) / (h1_t0_out - h0_t0_out));
+
+	return humidity;
+}
