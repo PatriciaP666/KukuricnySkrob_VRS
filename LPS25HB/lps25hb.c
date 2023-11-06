@@ -11,7 +11,8 @@ uint8_t lps25hb_add = LPS25HB_DEVICE_ADDRESS0;
 
 uint8t_t LPS25HB_read()
 {
-
+	uint8_t data = 0;
+	return *(i2c_read(&data, 1, reg_add, lps25hb_add, 0));
 }
 
 uint8_t LPS25HB_write()
