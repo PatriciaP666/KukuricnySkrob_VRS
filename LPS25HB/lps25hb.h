@@ -27,4 +27,8 @@
 #define LPS25HB_REFERENCE_PRESSURE_L		0x09
 #define LPS25HB_REFERENCE_PRESSURE_H		0x0A
 
+uint8_t LPS25HB_read(uint8_t reg_add);
+void LPS25HB_write(uint8_t data, uint8_t reg_add, uint8_t slave_add);
+uint8_t LPS25HB_Init();
+
 #endif /* LPS25HB_H_ */

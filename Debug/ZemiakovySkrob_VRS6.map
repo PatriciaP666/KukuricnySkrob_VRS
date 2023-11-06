@@ -1027,12 +1027,12 @@ Discarded input sections
  .data.lps25hb_add
                 0x0000000000000000        0x1 ./LPS25HB/lps25hb.o
  .text.LPS25HB_read
-                0x0000000000000000       0x1c ./LPS25HB/lps25hb.o
+                0x0000000000000000       0x18 ./LPS25HB/lps25hb.o
  .text.LPS25HB_write
                 0x0000000000000000       0x26 ./LPS25HB/lps25hb.o
  .text.LPS25HB_Init
                 0x0000000000000000       0x50 ./LPS25HB/lps25hb.o
- .debug_info    0x0000000000000000      0x194 ./LPS25HB/lps25hb.o
+ .debug_info    0x0000000000000000      0x185 ./LPS25HB/lps25hb.o
  .debug_abbrev  0x0000000000000000      0x108 ./LPS25HB/lps25hb.o
  .debug_aranges
                 0x0000000000000000       0x30 ./LPS25HB/lps25hb.o
@@ -1066,7 +1066,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000      0x142 ./LPS25HB/lps25hb.o
  .debug_macro   0x0000000000000000       0x22 ./LPS25HB/lps25hb.o
  .debug_macro   0x0000000000000000       0x5e ./LPS25HB/lps25hb.o
- .debug_line    0x0000000000000000      0x645 ./LPS25HB/lps25hb.o
+ .debug_line    0x0000000000000000      0x643 ./LPS25HB/lps25hb.o
  .debug_str     0x0000000000000000    0x6cfcd ./LPS25HB/lps25hb.o
  .comment       0x0000000000000000       0x44 ./LPS25HB/lps25hb.o
  .debug_frame   0x0000000000000000       0x80 ./LPS25HB/lps25hb.o
