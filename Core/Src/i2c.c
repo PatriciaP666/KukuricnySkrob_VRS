@@ -139,6 +139,10 @@ void I2C1_EV_IRQHandler(void)
 	if(LL_I2C_IsActiveFlag_RXNE(I2C1))
 	{
 		// Call function Master Reception Callback
-
+		rec_buffer_read[rec_index++] = LL_I2C_ReceiveData8(I2C1);
+		if(rec_index > 19)
+		{
+				rec_index = 0;
+		}
 	}
 }
