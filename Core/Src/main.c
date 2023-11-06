@@ -103,9 +103,6 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
-	  printf(lol);
-	  printf(lol);
-	  printf(lol);
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */

@@ -9,7 +9,7 @@
 #define LPS25HB_H_
 
 #include "main.h"
-#include "i2c.c"
+#include "i2c.h"
 
 #define LPS25HB_WHO_AM_I_ADDRESS			0x0f
 #define LPS25HB_WHO_AM_I_VALUE				0xBD

@@ -21,7 +21,8 @@
 #include "i2c.h"
 
 /* USER CODE BEGIN 0 */
-
+uint8_t *rec_buffer_read, end_read_flag = 0;
+volatile uint8_t rec_index;
 /* USER CODE END 0 */
 
 /* I2C1 init function */
@@ -99,7 +100,7 @@ void i2c_write(uint8_t data, uint8_t reg_add, uint8_t slave_add, uint8_t read_fl
 		LL_I2C_ClearFlag_STOP(I2C1);
 }
 
-uint8_t i2c_read(uint8_t* buffer, uint8_t lenght, uint8_t reg_add, uint8t_t slave_add, uint8_t read_flag)
+uint8_t i2c_read(uint8_t* buffer, uint8_t lenght, uint8_t reg_add, uint8_t slave_add, uint8_t read_flag)
 {
 	rec_buffer_read = buffer;
 	if(read_flag)

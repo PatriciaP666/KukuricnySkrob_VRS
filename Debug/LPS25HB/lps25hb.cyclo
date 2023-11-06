@@ -1,0 +1,3 @@
+../LPS25HB/lps25hb.c:12:9:LPS25HB_read	1
+../LPS25HB/lps25hb.c:18:6:LPS25HB_write	1
+../LPS25HB/lps25hb.c:23:9:LPS25HB_Init	3
