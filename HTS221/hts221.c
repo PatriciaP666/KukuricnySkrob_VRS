@@ -48,3 +48,47 @@ uint8_t HTS221_Init()
 	reg_status = HTS221_read(HTS221_CONTROL_REG);
 	return state;
 }
+
+float HTS221_get_temperature()
+{
+	int16_t t0_degC_x8 = 0;
+	int16_t t1_degC_x8 = 0;
+	uint8_t t0_t1_msb = 0;
+	int16_t t0_out = 0;
+	int16_t t1_out = 0;
+
+	// T0 temperature
+	uint8_t t0_tmp = HTS221_read(HTS221_T0_DEG_C_x8);
+	t0_degC_x8 |= t0_tmp;
+
+	uint8_t t0_out_tmp[2] = { 0 };
+	HTS221_array(t0_out_tmp, HTS221_T0_OUT_L, 2);
+	t0_out |= t0_out_tmp[0];
+	t0_out |= (t0_out_tmp[1] << 8);
+
+	// T1 temperature
+	uint8_t t1_temp = HTS221_read(HTS221_T1_DEG_C_x8);
+	t1_degC_x8 |= t1_temp;
+
+	uint8_t t1_out_tmp[2] = { 0 };
+	HTS221_array(t1_out_tmp, HTS221_T1_OUT_L, 2);
+	t1_out |= t1_out_tmp[0];
+	t1_out |= (t1_out_tmp[1] << 8);
+
+	// T_OUT temperature
+	uint8_t t_out_tmp[2] = { 0 };
+	HTS221_array(t_out_tmp, HTS221_TEMPERATURE_OUT_L, 2);
+	int16_t t_out = 0;
+	t_out |= t_out_tmp[0];
+	t_out |= (t_out_tmp[1] << 8);
+
+	// Temperature interpolation
+	t0_t1_msb = HTS221_read(HTS221_T1_T0_MSB);
+
+	float T_DegC;
+	float T0_degC = (t0_degC_x8 + (1 << 8) * (t0_t1_msb & 0x03)) / 8.0;
+	float T1_degC = (t1_degC_x8 + (1 << 6) * (t0_t1_msb & 0x0C)) / 8.0; // Value is in 3rd and fourth bit, need to shift this value 6 more bits
+	T_DegC = (T0_degC + (t_out - t0_out) * (T1_degC - T0_degC) / (t1_out - t0_out));
+
+	return T_DegC;
+}
