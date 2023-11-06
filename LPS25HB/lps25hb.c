@@ -9,3 +9,17 @@
 
 uint8_t lps25hb_add = LPS25HB_DEVICE_ADDRESS0;
 
+uint8t_t LPS25HB_read()
+{
+
+}
+
+uint8_t LPS25HB_write()
+{
+
+}
+
+uint8_t LPS25HB_Init()
+{
+
+}
