@@ -75,12 +75,26 @@ void MX_I2C1_Init(void)
   I2C_InitStruct.OwnAddrSize = LL_I2C_OWNADDRESS1_7BIT;
   LL_I2C_Init(I2C1, &I2C_InitStruct);
   LL_I2C_SetOwnAddress2(I2C1, 0, LL_I2C_OWNADDRESS2_NOMASK);
-  /* USER CODE BEGIN I2C1_Init 2 */
-
-  /* USER CODE END I2C1_Init 2 */
+  LL_I2C_Enable(I2C1);
 
 }
 
-/* USER CODE BEGIN 1 */
-//hahahahahha
-/* USER CODE END 1 */
+void i2c_write(uint8_t data, uint8_t reg_add, uint8_t slave_add, uint8_t read_flag)
+{
+	if(read_flag)
+	{
+		reg_add |= (1 << 7);
+	}
+
+	LL_I2C_HandleTransfer(I2C1, slave_add, LL_I2C_ADDRSLAVE_7BIT, 2, LL_I2C_MODE_AUTOEND, LL_I2C_GENERATE_START_WRITE);
+	LL_I2C_TransmitData8(I2C1, reg_add);
+
+		while(!LL_I2C_IsActiveFlag_STOP(I2C1))
+		{
+			if(LL_I2C_IsActiveFlag_TXIS(I2C1))
+			{
+				LL_I2C_TransmitData8(I2C1, data);
+			}
+		}
+		LL_I2C_ClearFlag_STOP(I2C1);
+}
