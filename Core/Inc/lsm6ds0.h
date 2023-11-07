@@ -31,5 +31,7 @@ void lsm6ds0_write(uint8_t reg_add, uint8_t value);
 void lsm6ds0_array(uint8_t * data, uint8_t reg, uint8_t length);
 int8_t lsm6ds0_get_temp();
 uint8_t lsm6ds0_init(void);
+int8_t lsm6ds0_get_temp();
+void lsm6ds0_get_acc(float* x, float* y, float* z);
 
 #endif /* INC_LSM6DS0_H_ */

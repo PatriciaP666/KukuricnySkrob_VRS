@@ -70,3 +70,27 @@ uint8_t lsm6ds0_init(void)
 	return state;
 }
 
+void lsm6ds0_get_acc(float* x, float* y, float* z)
+{
+	uint8_t data[6];
+	int16_t xx, yy, zz;
+
+	uint8_t temp;
+
+	//get current scale and use it for final calculation
+    temp = lsm6ds0_read(LSM6DS0_ADDRESS_CTRL1);
+
+	temp = temp >> 2;
+    temp &= 0x03;			//full scale bits exctracted
+
+	lsm6ds0_array(data, LSM6DS0_ADDRESS_ACCX, 6);
+
+	xx = ((uint16_t)data[1]) << 8 | data[0];
+	yy = ((uint16_t)data[3]) << 8 | data[2];
+	zz = ((uint16_t)data[5]) << 8 | data[4];
+
+	*x = (xx >> 4) / 1000.0f;
+	*y = (yy >> 4) / 1000.0f;
+	*z = (zz >> 4) / 1000.0f;
+}
+
