@@ -22,6 +22,10 @@
 #include "i2c.h"
 #include "usart.h"
 #include "gpio.h"
+#include "lps25hb.h"
+#include "hts221.h"
+#include "stdio.h"
+#include "string.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -98,17 +102,20 @@ int main(void)
   MX_DMA_Init();
   MX_I2C1_Init();
   MX_USART2_UART_Init();
-  /* USER CODE BEGIN 2 */
+  LPS25HB_Init();
+  HTS221_Init();
 
-  /* USER CODE END 2 */
-
-  /* Infinite loop */
-  /* USER CODE BEGIN WHILE */
   while (1)
   {
-    /* USER CODE END WHILE */
+	  memset(message_pressure, '\0', sizeof(message_pressure));
+	  float pressure = LPS25HB_pressure();
 
-    /* USER CODE BEGIN 3 */
+	  float temperature = HTS221_get_temperature();
+	  float humidity = HTS221_get_humidity();
+
+	  sprintf(message_pressure, "%7.3f, %3.1f, %d\r", pressure, temperature, (int) humidity);
+	  USART2_PutBuffer((uint8_t*) message_pressure, strlen(message_pressure));
+	  LL_mDelay(40);
   }
   /* USER CODE END 3 */
 }

@@ -22,7 +22,7 @@ void LPS25HB_write(uint8_t data, uint8_t reg_add, uint8_t slave_add)
 
 uint8_t LPS25HB_Init()
 {
-	uint8_t state = 0;
+	uint8_t state = 1;
 	uint8_t a = LPS25HB_read(LPS25HB_WHO_AM_I_ADDRESS);
 	if(a == LPS25HB_WHO_AM_I_VALUE)
 	{
