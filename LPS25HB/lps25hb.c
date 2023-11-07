@@ -23,6 +23,7 @@ void LPS25HB_write(uint8_t data, uint8_t reg_add, uint8_t slave_add)
 uint8_t LPS25HB_Init()
 {
 	uint8_t state = 1;
+	LL_mDelay(100);
 	uint8_t a = LPS25HB_read(LPS25HB_WHO_AM_I_ADDRESS);
 	if(a == LPS25HB_WHO_AM_I_VALUE)
 	{
@@ -46,9 +47,9 @@ uint8_t LPS25HB_Init()
 	reg_setup |= (1 << 7);
 	LPS25HB_write(reg_setup, LPS25HB_CONTROL_REG1, lps25hb_add);
 	// Set up continuous update
-	reg_setup = LPS25HB_read_byte(LPS25HB_CONTROL_REG1);
+	reg_setup = LPS25HB_read(LPS25HB_CONTROL_REG1);
 	reg_setup &= ~(1 << 2);
-	LPS25HB_write_byte(reg_setup, LPS25HB_CONTROL_REG1, lps25hb_add);
+	LPS25HB_write(reg_setup, LPS25HB_CONTROL_REG1, lps25hb_add);
 	// Set Output data rate register to 25 Hz -> 0b100
 	reg_setup = LPS25HB_read(LPS25HB_CONTROL_REG1);
 	reg_setup &= ~(0x07 << 4);

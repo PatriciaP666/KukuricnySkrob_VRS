@@ -63,7 +63,7 @@ main-build: ZemiakovySkrob_VRS6.elf secondary-outputs
 
 # Tool invocations
 ZemiakovySkrob_VRS6.elf ZemiakovySkrob_VRS6.map: $(OBJS) $(USER_OBJS) D:\Skola\Ing\1\ rocnik\Vnorene\ RS\ZemiakovySkrob_VRS6\STM32F303K8TX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "ZemiakovySkrob_VRS6.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"D:\Skola\Ing\1 rocnik\Vnorene RS\ZemiakovySkrob_VRS6\STM32F303K8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ZemiakovySkrob_VRS6.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+	arm-none-eabi-gcc -o "ZemiakovySkrob_VRS6.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"D:\Skola\Ing\1 rocnik\Vnorene RS\ZemiakovySkrob_VRS6\STM32F303K8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ZemiakovySkrob_VRS6.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

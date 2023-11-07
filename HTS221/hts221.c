@@ -30,6 +30,7 @@ void HTS221_array(uint8_t *data, uint8_t reg, uint8_t length)
 uint8_t HTS221_Init()
 {
 	uint8_t state = 1;
+	LL_mDelay(100);
 	uint8_t a = HTS221_read(HTS221_WHO_AM_I_ADDRESS);
 	if (a != HTS221_WHO_AM_I_VALUE)
 	{

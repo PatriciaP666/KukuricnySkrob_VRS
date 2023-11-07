@@ -105,6 +105,9 @@ int main(void)
   LPS25HB_Init();
   HTS221_Init();
 
+  char message_pressure[128];
+  memset(message_pressure, 0, sizeof(message_pressure));
+
   while (1)
   {
 	  memset(message_pressure, '\0', sizeof(message_pressure));
@@ -113,7 +116,7 @@ int main(void)
 	  float temperature = HTS221_get_temperature();
 	  float humidity = HTS221_get_humidity();
 
-	  sprintf(message_pressure, "%7.3f, %3.1f, %d\r", pressure, temperature, (int) humidity);
+	  sprintf(message_pressure, "%.4f, %.2f, %d\r", pressure, temperature, (int) humidity);
 	  USART2_PutBuffer((uint8_t*) message_pressure, strlen(message_pressure));
 	  LL_mDelay(40);
   }
