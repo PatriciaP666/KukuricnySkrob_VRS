@@ -1,0 +1,6 @@
+../Core/Src/lsm6ds0.c:12:9:lsm6ds0_read	1
+../Core/Src/lsm6ds0.c:19:6:lsm6ds0_write	1
+../Core/Src/lsm6ds0.c:25:6:lsm6ds0_array	1
+../Core/Src/lsm6ds0.c:31:8:lsm6ds0_get_temp	1
+../Core/Src/lsm6ds0.c:39:9:lsm6ds0_init	3
+../Core/Src/lsm6ds0.c:73:6:lsm6ds0_get_acc	1

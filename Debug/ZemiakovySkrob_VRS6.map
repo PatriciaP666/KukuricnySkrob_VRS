@@ -38,6 +38,12 @@ C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.external
                               C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.1.202309131626/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-findfp.o) (_fflush_r)
 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.1.202309131626/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-sbrkr.o)
                               C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.1.202309131626/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-mallocr.o) (_sbrk_r)
+C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.1.202309131626/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_addsubdf3.o)
+                              ./HTS221/hts221.o (__aeabi_i2d)
+C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.1.202309131626/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_muldivdf3.o)
+                              ./HTS221/hts221.o (__aeabi_ddiv)
+C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.1.202309131626/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_truncdfsf2.o)
+                              ./HTS221/hts221.o (__aeabi_d2f)
 
 Discarded input sections
 
@@ -142,7 +148,7 @@ Discarded input sections
  .text.i2c_write
                 0x0000000000000000       0x88 ./Core/Src/i2c.o
  .text.i2c_read
-                0x0000000000000000       0xf8 ./Core/Src/i2c.o
+                0x0000000000000000       0xf4 ./Core/Src/i2c.o
  .debug_macro   0x0000000000000000      0xade ./Core/Src/i2c.o
  .debug_macro   0x0000000000000000       0x2e ./Core/Src/i2c.o
  .debug_macro   0x0000000000000000       0x28 ./Core/Src/i2c.o
@@ -169,6 +175,91 @@ Discarded input sections
  .debug_macro   0x0000000000000000      0x287 ./Core/Src/i2c.o
  .debug_macro   0x0000000000000000      0x142 ./Core/Src/i2c.o
  .debug_macro   0x0000000000000000       0x22 ./Core/Src/i2c.o
+ .group         0x0000000000000000        0xc ./Core/Src/lsm6ds0.o
+ .group         0x0000000000000000        0xc ./Core/Src/lsm6ds0.o
+ .group         0x0000000000000000        0xc ./Core/Src/lsm6ds0.o
+ .group         0x0000000000000000        0xc ./Core/Src/lsm6ds0.o
+ .group         0x0000000000000000        0xc ./Core/Src/lsm6ds0.o
+ .group         0x0000000000000000        0xc ./Core/Src/lsm6ds0.o
+ .group         0x0000000000000000        0xc ./Core/Src/lsm6ds0.o
+ .group         0x0000000000000000        0xc ./Core/Src/lsm6ds0.o
+ .group         0x0000000000000000        0xc ./Core/Src/lsm6ds0.o
+ .group         0x0000000000000000        0xc ./Core/Src/lsm6ds0.o
+ .group         0x0000000000000000        0xc ./Core/Src/lsm6ds0.o
+ .group         0x0000000000000000        0xc ./Core/Src/lsm6ds0.o
+ .group         0x0000000000000000        0xc ./Core/Src/lsm6ds0.o
+ .group         0x0000000000000000        0xc ./Core/Src/lsm6ds0.o
+ .group         0x0000000000000000        0xc ./Core/Src/lsm6ds0.o
+ .group         0x0000000000000000        0xc ./Core/Src/lsm6ds0.o
+ .group         0x0000000000000000        0xc ./Core/Src/lsm6ds0.o
+ .group         0x0000000000000000        0xc ./Core/Src/lsm6ds0.o
+ .group         0x0000000000000000        0xc ./Core/Src/lsm6ds0.o
+ .group         0x0000000000000000        0xc ./Core/Src/lsm6ds0.o
+ .group         0x0000000000000000        0xc ./Core/Src/lsm6ds0.o
+ .group         0x0000000000000000        0xc ./Core/Src/lsm6ds0.o
+ .group         0x0000000000000000        0xc ./Core/Src/lsm6ds0.o
+ .group         0x0000000000000000        0xc ./Core/Src/lsm6ds0.o
+ .group         0x0000000000000000        0xc ./Core/Src/lsm6ds0.o
+ .group         0x0000000000000000        0xc ./Core/Src/lsm6ds0.o
+ .group         0x0000000000000000        0xc ./Core/Src/lsm6ds0.o
+ .text          0x0000000000000000        0x0 ./Core/Src/lsm6ds0.o
+ .data          0x0000000000000000        0x0 ./Core/Src/lsm6ds0.o
+ .bss           0x0000000000000000        0x0 ./Core/Src/lsm6ds0.o
+ .rodata.CHANNEL_OFFSET_TAB
+                0x0000000000000000        0x7 ./Core/Src/lsm6ds0.o
+ .data.add      0x0000000000000000        0x1 ./Core/Src/lsm6ds0.o
+ .text.lsm6ds0_read
+                0x0000000000000000       0x34 ./Core/Src/lsm6ds0.o
+ .text.lsm6ds0_write
+                0x0000000000000000       0x2c ./Core/Src/lsm6ds0.o
+ .text.lsm6ds0_array
+                0x0000000000000000       0x30 ./Core/Src/lsm6ds0.o
+ .text.lsm6ds0_get_temp
+                0x0000000000000000       0x34 ./Core/Src/lsm6ds0.o
+ .text.lsm6ds0_init
+                0x0000000000000000       0x64 ./Core/Src/lsm6ds0.o
+ .text.lsm6ds0_get_acc
+                0x0000000000000000       0xc4 ./Core/Src/lsm6ds0.o
+ .debug_info    0x0000000000000000      0x346 ./Core/Src/lsm6ds0.o
+ .debug_abbrev  0x0000000000000000      0x15b ./Core/Src/lsm6ds0.o
+ .debug_aranges
+                0x0000000000000000       0x48 ./Core/Src/lsm6ds0.o
+ .debug_rnglists
+                0x0000000000000000       0x32 ./Core/Src/lsm6ds0.o
+ .debug_macro   0x0000000000000000      0x144 ./Core/Src/lsm6ds0.o
+ .debug_macro   0x0000000000000000      0xade ./Core/Src/lsm6ds0.o
+ .debug_macro   0x0000000000000000       0x2e ./Core/Src/lsm6ds0.o
+ .debug_macro   0x0000000000000000       0x28 ./Core/Src/lsm6ds0.o
+ .debug_macro   0x0000000000000000       0x22 ./Core/Src/lsm6ds0.o
+ .debug_macro   0x0000000000000000       0x8e ./Core/Src/lsm6ds0.o
+ .debug_macro   0x0000000000000000       0x51 ./Core/Src/lsm6ds0.o
+ .debug_macro   0x0000000000000000      0x103 ./Core/Src/lsm6ds0.o
+ .debug_macro   0x0000000000000000       0x6a ./Core/Src/lsm6ds0.o
+ .debug_macro   0x0000000000000000      0x1df ./Core/Src/lsm6ds0.o
+ .debug_macro   0x0000000000000000       0x1c ./Core/Src/lsm6ds0.o
+ .debug_macro   0x0000000000000000       0x22 ./Core/Src/lsm6ds0.o
+ .debug_macro   0x0000000000000000       0xd9 ./Core/Src/lsm6ds0.o
+ .debug_macro   0x0000000000000000      0xf07 ./Core/Src/lsm6ds0.o
+ .debug_macro   0x0000000000000000    0x10be0 ./Core/Src/lsm6ds0.o
+ .debug_macro   0x0000000000000000       0x6d ./Core/Src/lsm6ds0.o
+ .debug_macro   0x0000000000000000      0x247 ./Core/Src/lsm6ds0.o
+ .debug_macro   0x0000000000000000      0x4c2 ./Core/Src/lsm6ds0.o
+ .debug_macro   0x0000000000000000       0xe0 ./Core/Src/lsm6ds0.o
+ .debug_macro   0x0000000000000000      0x29f ./Core/Src/lsm6ds0.o
+ .debug_macro   0x0000000000000000       0xfe ./Core/Src/lsm6ds0.o
+ .debug_macro   0x0000000000000000       0x28 ./Core/Src/lsm6ds0.o
+ .debug_macro   0x0000000000000000       0x30 ./Core/Src/lsm6ds0.o
+ .debug_macro   0x0000000000000000       0xa8 ./Core/Src/lsm6ds0.o
+ .debug_macro   0x0000000000000000      0x287 ./Core/Src/lsm6ds0.o
+ .debug_macro   0x0000000000000000      0x142 ./Core/Src/lsm6ds0.o
+ .debug_macro   0x0000000000000000       0x22 ./Core/Src/lsm6ds0.o
+ .debug_macro   0x0000000000000000       0x3a ./Core/Src/lsm6ds0.o
+ .debug_line    0x0000000000000000      0x6f4 ./Core/Src/lsm6ds0.o
+ .debug_str     0x0000000000000000    0x6cfa2 ./Core/Src/lsm6ds0.o
+ .comment       0x0000000000000000       0x44 ./Core/Src/lsm6ds0.o
+ .debug_frame   0x0000000000000000       0xe8 ./Core/Src/lsm6ds0.o
+ .ARM.attributes
+                0x0000000000000000       0x34 ./Core/Src/lsm6ds0.o
  .group         0x0000000000000000        0xc ./Core/Src/main.o
  .group         0x0000000000000000        0xc ./Core/Src/main.o
  .group         0x0000000000000000        0xc ./Core/Src/main.o
@@ -522,6 +613,21 @@ Discarded input sections
  .debug_macro   0x0000000000000000      0xf07 ./Core/Src/system_stm32f3xx.o
  .debug_macro   0x0000000000000000    0x10be0 ./Core/Src/system_stm32f3xx.o
  .debug_macro   0x0000000000000000       0x6d ./Core/Src/system_stm32f3xx.o
+ .group         0x0000000000000000        0xc ./Core/Src/usart.o
+ .text          0x0000000000000000        0x0 ./Core/Src/usart.o
+ .data          0x0000000000000000        0x0 ./Core/Src/usart.o
+ .bss           0x0000000000000000        0x0 ./Core/Src/usart.o
+ .debug_info    0x0000000000000000       0x22 ./Core/Src/usart.o
+ .debug_abbrev  0x0000000000000000       0x12 ./Core/Src/usart.o
+ .debug_aranges
+                0x0000000000000000       0x18 ./Core/Src/usart.o
+ .debug_macro   0x0000000000000000       0x11 ./Core/Src/usart.o
+ .debug_macro   0x0000000000000000      0xade ./Core/Src/usart.o
+ .debug_line    0x0000000000000000       0x34 ./Core/Src/usart.o
+ .debug_str     0x0000000000000000     0x2e78 ./Core/Src/usart.o
+ .comment       0x0000000000000000       0x44 ./Core/Src/usart.o
+ .ARM.attributes
+                0x0000000000000000       0x34 ./Core/Src/usart.o
  .text          0x0000000000000000       0x14 ./Core/Startup/startup_stm32f303k8tx.o
  .data          0x0000000000000000        0x0 ./Core/Startup/startup_stm32f303k8tx.o
  .bss           0x0000000000000000        0x0 ./Core/Startup/startup_stm32f303k8tx.o
@@ -978,18 +1084,89 @@ Discarded input sections
  .debug_macro   0x0000000000000000      0x29f ./Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_ll_utils.o
  .debug_macro   0x0000000000000000       0xa8 ./Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_ll_utils.o
  .group         0x0000000000000000        0xc ./HTS221/hts221.o
+ .group         0x0000000000000000        0xc ./HTS221/hts221.o
+ .group         0x0000000000000000        0xc ./HTS221/hts221.o
+ .group         0x0000000000000000        0xc ./HTS221/hts221.o
+ .group         0x0000000000000000        0xc ./HTS221/hts221.o
+ .group         0x0000000000000000        0xc ./HTS221/hts221.o
+ .group         0x0000000000000000        0xc ./HTS221/hts221.o
+ .group         0x0000000000000000        0xc ./HTS221/hts221.o
+ .group         0x0000000000000000        0xc ./HTS221/hts221.o
+ .group         0x0000000000000000        0xc ./HTS221/hts221.o
+ .group         0x0000000000000000        0xc ./HTS221/hts221.o
+ .group         0x0000000000000000        0xc ./HTS221/hts221.o
+ .group         0x0000000000000000        0xc ./HTS221/hts221.o
+ .group         0x0000000000000000        0xc ./HTS221/hts221.o
+ .group         0x0000000000000000        0xc ./HTS221/hts221.o
+ .group         0x0000000000000000        0xc ./HTS221/hts221.o
+ .group         0x0000000000000000        0xc ./HTS221/hts221.o
+ .group         0x0000000000000000        0xc ./HTS221/hts221.o
+ .group         0x0000000000000000        0xc ./HTS221/hts221.o
+ .group         0x0000000000000000        0xc ./HTS221/hts221.o
+ .group         0x0000000000000000        0xc ./HTS221/hts221.o
+ .group         0x0000000000000000        0xc ./HTS221/hts221.o
+ .group         0x0000000000000000        0xc ./HTS221/hts221.o
+ .group         0x0000000000000000        0xc ./HTS221/hts221.o
+ .group         0x0000000000000000        0xc ./HTS221/hts221.o
+ .group         0x0000000000000000        0xc ./HTS221/hts221.o
+ .group         0x0000000000000000        0xc ./HTS221/hts221.o
  .text          0x0000000000000000        0x0 ./HTS221/hts221.o
  .data          0x0000000000000000        0x0 ./HTS221/hts221.o
  .bss           0x0000000000000000        0x0 ./HTS221/hts221.o
- .debug_info    0x0000000000000000       0x22 ./HTS221/hts221.o
- .debug_abbrev  0x0000000000000000       0x12 ./HTS221/hts221.o
+ .rodata.CHANNEL_OFFSET_TAB
+                0x0000000000000000        0x7 ./HTS221/hts221.o
+ .data.hts221_add
+                0x0000000000000000        0x1 ./HTS221/hts221.o
+ .text.HTS221_read
+                0x0000000000000000       0x34 ./HTS221/hts221.o
+ .text.HTS221_write
+                0x0000000000000000       0x26 ./HTS221/hts221.o
+ .text.HTS221_array
+                0x0000000000000000       0x30 ./HTS221/hts221.o
+ .text.HTS221_Init
+                0x0000000000000000       0x7c ./HTS221/hts221.o
+ .text.HTS221_get_temperature
+                0x0000000000000000      0x180 ./HTS221/hts221.o
+ .text.HTS221_get_humidity
+                0x0000000000000000      0x144 ./HTS221/hts221.o
+ .debug_info    0x0000000000000000      0x3e5 ./HTS221/hts221.o
+ .debug_abbrev  0x0000000000000000      0x13d ./HTS221/hts221.o
  .debug_aranges
-                0x0000000000000000       0x18 ./HTS221/hts221.o
- .debug_macro   0x0000000000000000       0x11 ./HTS221/hts221.o
+                0x0000000000000000       0x48 ./HTS221/hts221.o
+ .debug_rnglists
+                0x0000000000000000       0x33 ./HTS221/hts221.o
+ .debug_macro   0x0000000000000000      0x148 ./HTS221/hts221.o
  .debug_macro   0x0000000000000000      0xade ./HTS221/hts221.o
- .debug_line    0x0000000000000000       0x33 ./HTS221/hts221.o
- .debug_str     0x0000000000000000     0x2e77 ./HTS221/hts221.o
+ .debug_macro   0x0000000000000000       0x2e ./HTS221/hts221.o
+ .debug_macro   0x0000000000000000       0x28 ./HTS221/hts221.o
+ .debug_macro   0x0000000000000000       0x22 ./HTS221/hts221.o
+ .debug_macro   0x0000000000000000       0x8e ./HTS221/hts221.o
+ .debug_macro   0x0000000000000000       0x51 ./HTS221/hts221.o
+ .debug_macro   0x0000000000000000      0x103 ./HTS221/hts221.o
+ .debug_macro   0x0000000000000000       0x6a ./HTS221/hts221.o
+ .debug_macro   0x0000000000000000      0x1df ./HTS221/hts221.o
+ .debug_macro   0x0000000000000000       0x1c ./HTS221/hts221.o
+ .debug_macro   0x0000000000000000       0x22 ./HTS221/hts221.o
+ .debug_macro   0x0000000000000000       0xd9 ./HTS221/hts221.o
+ .debug_macro   0x0000000000000000      0xf07 ./HTS221/hts221.o
+ .debug_macro   0x0000000000000000    0x10be0 ./HTS221/hts221.o
+ .debug_macro   0x0000000000000000       0x6d ./HTS221/hts221.o
+ .debug_macro   0x0000000000000000      0x247 ./HTS221/hts221.o
+ .debug_macro   0x0000000000000000      0x4c2 ./HTS221/hts221.o
+ .debug_macro   0x0000000000000000       0xe0 ./HTS221/hts221.o
+ .debug_macro   0x0000000000000000      0x29f ./HTS221/hts221.o
+ .debug_macro   0x0000000000000000       0xfe ./HTS221/hts221.o
+ .debug_macro   0x0000000000000000       0x28 ./HTS221/hts221.o
+ .debug_macro   0x0000000000000000       0x30 ./HTS221/hts221.o
+ .debug_macro   0x0000000000000000       0xa8 ./HTS221/hts221.o
+ .debug_macro   0x0000000000000000      0x287 ./HTS221/hts221.o
+ .debug_macro   0x0000000000000000      0x142 ./HTS221/hts221.o
+ .debug_macro   0x0000000000000000       0x22 ./HTS221/hts221.o
+ .debug_macro   0x0000000000000000       0x94 ./HTS221/hts221.o
+ .debug_line    0x0000000000000000      0x782 ./HTS221/hts221.o
+ .debug_str     0x0000000000000000    0x6d196 ./HTS221/hts221.o
  .comment       0x0000000000000000       0x44 ./HTS221/hts221.o
+ .debug_frame   0x0000000000000000       0xe8 ./HTS221/hts221.o
  .ARM.attributes
                 0x0000000000000000       0x34 ./HTS221/hts221.o
  .group         0x0000000000000000        0xc ./LPS25HB/lps25hb.o
@@ -1027,17 +1204,22 @@ Discarded input sections
  .data.lps25hb_add
                 0x0000000000000000        0x1 ./LPS25HB/lps25hb.o
  .text.LPS25HB_read
-                0x0000000000000000       0x18 ./LPS25HB/lps25hb.o
+                0x0000000000000000       0x34 ./LPS25HB/lps25hb.o
  .text.LPS25HB_write
                 0x0000000000000000       0x26 ./LPS25HB/lps25hb.o
  .text.LPS25HB_Init
-                0x0000000000000000       0x50 ./LPS25HB/lps25hb.o
- .debug_info    0x0000000000000000      0x185 ./LPS25HB/lps25hb.o
- .debug_abbrev  0x0000000000000000      0x108 ./LPS25HB/lps25hb.o
- .debug_aranges
+                0x0000000000000000       0xc0 ./LPS25HB/lps25hb.o
+ .text.LPS25HB_array
                 0x0000000000000000       0x30 ./LPS25HB/lps25hb.o
+ .rodata        0x0000000000000000        0x3 ./LPS25HB/lps25hb.o
+ .text.LPS25HB_pressure
+                0x0000000000000000       0x64 ./LPS25HB/lps25hb.o
+ .debug_info    0x0000000000000000      0x2a0 ./LPS25HB/lps25hb.o
+ .debug_abbrev  0x0000000000000000      0x16a ./LPS25HB/lps25hb.o
+ .debug_aranges
+                0x0000000000000000       0x40 ./LPS25HB/lps25hb.o
  .debug_rnglists
-                0x0000000000000000       0x1f ./LPS25HB/lps25hb.o
+                0x0000000000000000       0x2c ./LPS25HB/lps25hb.o
  .debug_macro   0x0000000000000000      0x148 ./LPS25HB/lps25hb.o
  .debug_macro   0x0000000000000000      0xade ./LPS25HB/lps25hb.o
  .debug_macro   0x0000000000000000       0x2e ./LPS25HB/lps25hb.o
@@ -1066,10 +1248,10 @@ Discarded input sections
  .debug_macro   0x0000000000000000      0x142 ./LPS25HB/lps25hb.o
  .debug_macro   0x0000000000000000       0x22 ./LPS25HB/lps25hb.o
  .debug_macro   0x0000000000000000       0x5e ./LPS25HB/lps25hb.o
- .debug_line    0x0000000000000000      0x643 ./LPS25HB/lps25hb.o
- .debug_str     0x0000000000000000    0x6cfcd ./LPS25HB/lps25hb.o
+ .debug_line    0x0000000000000000      0x6bb ./LPS25HB/lps25hb.o
+ .debug_str     0x0000000000000000    0x6d048 ./LPS25HB/lps25hb.o
  .comment       0x0000000000000000       0x44 ./LPS25HB/lps25hb.o
- .debug_frame   0x0000000000000000       0x80 ./LPS25HB/lps25hb.o
+ .debug_frame   0x0000000000000000       0xc4 ./LPS25HB/lps25hb.o
  .ARM.attributes
                 0x0000000000000000       0x34 ./LPS25HB/lps25hb.o
  .text          0x0000000000000000        0x0 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.1.202309131626/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-exit.o)
@@ -1289,6 +1471,24 @@ Discarded input sections
  .debug_frame   0x0000000000000000       0x2c C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.1.202309131626/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-sbrkr.o)
  .ARM.attributes
                 0x0000000000000000       0x34 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.1.202309131626/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-sbrkr.o)
+ .text          0x0000000000000000      0x378 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.1.202309131626/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_addsubdf3.o)
+ .data          0x0000000000000000        0x0 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.1.202309131626/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_addsubdf3.o)
+ .bss           0x0000000000000000        0x0 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.1.202309131626/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_addsubdf3.o)
+ .debug_frame   0x0000000000000000       0xac C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.1.202309131626/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_addsubdf3.o)
+ .ARM.attributes
+                0x0000000000000000       0x1e C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.1.202309131626/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_addsubdf3.o)
+ .text          0x0000000000000000      0x424 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.1.202309131626/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_muldivdf3.o)
+ .data          0x0000000000000000        0x0 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.1.202309131626/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_muldivdf3.o)
+ .bss           0x0000000000000000        0x0 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.1.202309131626/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_muldivdf3.o)
+ .debug_frame   0x0000000000000000       0x50 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.1.202309131626/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_muldivdf3.o)
+ .ARM.attributes
+                0x0000000000000000       0x1e C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.1.202309131626/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_muldivdf3.o)
+ .text          0x0000000000000000       0xa0 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.1.202309131626/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_truncdfsf2.o)
+ .data          0x0000000000000000        0x0 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.1.202309131626/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_truncdfsf2.o)
+ .bss           0x0000000000000000        0x0 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.1.202309131626/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_truncdfsf2.o)
+ .debug_frame   0x0000000000000000       0x24 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.1.202309131626/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_truncdfsf2.o)
+ .ARM.attributes
+                0x0000000000000000       0x1e C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.1.202309131626/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_truncdfsf2.o)
  .text          0x0000000000000000        0x0 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.1.202309131626/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/thumb/v7e-m+fp/hard/crtend.o
  .data          0x0000000000000000        0x0 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.1.202309131626/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/thumb/v7e-m+fp/hard/crtend.o
  .bss           0x0000000000000000        0x0 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.1.202309131626/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/thumb/v7e-m+fp/hard/crtend.o
@@ -1316,11 +1516,13 @@ LOAD C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.ext
 LOAD C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.1.202309131626/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
 LOAD ./Core/Src/gpio.o
 LOAD ./Core/Src/i2c.o
+LOAD ./Core/Src/lsm6ds0.o
 LOAD ./Core/Src/main.o
 LOAD ./Core/Src/stm32f3xx_it.o
 LOAD ./Core/Src/syscalls.o
 LOAD ./Core/Src/sysmem.o
 LOAD ./Core/Src/system_stm32f3xx.o
+LOAD ./Core/Src/usart.o
 LOAD ./Core/Startup/startup_stm32f303k8tx.o
 LOAD ./Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_ll_dma.o
 LOAD ./Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_ll_exti.o
@@ -1855,16 +2057,16 @@ LOAD C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.ext
  .debug_macro   0x0000000000014435       0xfe ./Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_ll_i2c.o
  .debug_macro   0x0000000000014533      0x13a ./Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_ll_utils.o
 
-.debug_line     0x0000000000000000     0x3d6b
+.debug_line     0x0000000000000000     0x3d6c
  .debug_line    0x0000000000000000      0x616 ./Core/Src/gpio.o
- .debug_line    0x0000000000000616      0x9e0 ./Core/Src/i2c.o
- .debug_line    0x0000000000000ff6      0x8d9 ./Core/Src/main.o
- .debug_line    0x00000000000018cf      0x6b5 ./Core/Src/stm32f3xx_it.o
- .debug_line    0x0000000000001f84      0x558 ./Core/Src/system_stm32f3xx.o
- .debug_line    0x00000000000024dc       0x7a ./Core/Startup/startup_stm32f303k8tx.o
- .debug_line    0x0000000000002556      0x7ba ./Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_ll_gpio.o
- .debug_line    0x0000000000002d10      0x6c9 ./Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_ll_i2c.o
- .debug_line    0x00000000000033d9      0x992 ./Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_ll_utils.o
+ .debug_line    0x0000000000000616      0x9e1 ./Core/Src/i2c.o
+ .debug_line    0x0000000000000ff7      0x8d9 ./Core/Src/main.o
+ .debug_line    0x00000000000018d0      0x6b5 ./Core/Src/stm32f3xx_it.o
+ .debug_line    0x0000000000001f85      0x558 ./Core/Src/system_stm32f3xx.o
+ .debug_line    0x00000000000024dd       0x7a ./Core/Startup/startup_stm32f303k8tx.o
+ .debug_line    0x0000000000002557      0x7ba ./Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_ll_gpio.o
+ .debug_line    0x0000000000002d11      0x6c9 ./Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_ll_i2c.o
+ .debug_line    0x00000000000033da      0x992 ./Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_ll_utils.o
 
 .debug_str      0x0000000000000000    0x6ee2d
  .debug_str     0x0000000000000000    0x6ccd7 ./Core/Src/gpio.o

@@ -8,6 +8,9 @@
 #ifndef HTS221_H_
 #define HTS221_H_
 
+#include "main.h"
+#include "i2c.h"
+
 #define HTS221_DEVICE_ADDRESS			0xBE
 #define HTS221_WHO_AM_I_ADDRESS			0x0F
 #define HTS221_WHO_AM_I_VALUE			0xBC
